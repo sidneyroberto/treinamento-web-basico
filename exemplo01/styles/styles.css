@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "titulo";
+    src: url(../fonts/Baloo2-Bold.ttf);
+}
+
+@font-face {
+    font-family: "padrao";
+    src: url(../fonts/Baloo2-Regular.ttf);
+}
+
+h1,
+button {
+    font-family: "titulo";
+}
+
+p,
+span,
+input {
+    font-family: "padrao";
+}
+
+button {
+    background-color: #2d55ff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
