@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#operator-selector {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#calculator-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#calculator-area input[type=number] {
+  border-radius: 5px;
+  border: 2px solid #333;
+  text-align: center;
+}
+
+#result {
+  font-weight: bold;
+}
