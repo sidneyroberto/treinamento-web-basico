@@ -6,31 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
-  <title>Exemplo Operações Matemáticas</title>
+  <title>Calculadora</title>
 </head>
 
 <body>
   <h1>Calculadora</h1>
 
-  <div id="operator-selector">
-    <input type="radio" name="operator" value="+" id="sum" onclick="changeSignal()" checked>
-    <label for="sum">Somar</label>
-    <input type="radio" name="operator" value="-" id="subtraction" onclick="changeSignal()">
+  <div id="operator-selection">
+    <input type="radio" name="operator" id="sum" onclick="changeSignal()" checked>
+    <label for="sum">Soma</label>
+    <input type="radio" name="operator" id="subtraction" onclick="changeSignal()">
     <label for="subtraction">Subtração</label>
-    <input type="radio" name="operator" value="*" id="multiplication" onclick="changeSignal()">
+    <input type="radio" name="operator" id="multiplication" onclick="changeSignal()">
     <label for="multiplication">Multiplicação</label>
-    <input type="radio" name="operator" value="/" id="division" onclick="changeSignal()">
+    <input type="radio" name="operator" id="division" onclick="changeSignal()">
     <label for="division">Divisão</label>
   </div>
 
-  <div id="calculator-area">
-    <input type="number" value="0" onkeyup="calculate()" id="number1">
+  <div id="calculation-area">
+    <input type="number" id="number1" value="0" onkeyup="calculate()">
     <span id="operator-signal">+</span>
-    <input type="number" value="0" onkeyup="calculate()" id="number2">
+    <input type="number" id="number2" value="0" onkeyup="calculate()">
     <span>=</span>
     <span id="result">0</span>
   </div>
-
 
   <script src="js/index.js"></script>
 </body>
